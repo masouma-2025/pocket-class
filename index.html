@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pocket Classroom</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container-fluid px-5">
+          <!-- برند -->
+          <a class="navbar-brand fw-bold text-primary" href="#"
+            >Pocket Classroom</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- منو -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link text-dark library" href="#">Library</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark author" href="#">Author</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark learn" href="#">Learn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container my-3 bg-body-tertiary p-3">
+      <!-- Library -->
+      <section id="library">
+        <h4 class="fw-bold text-primary">Your Capsules</h4>
+        <p class="text-secondary">
+          Create, import, export and manage learning capsules. All data stays in
+          your browser.
+        </p>
+        <button class="btn btn-primary btn-sm">New Capsule</button>
+        <button class="btn btn-outline-success btn-sm">Import JSON</button>
+        <hr />
+        <div id="library-list"></div>
+      </section>
+
+      <!-- Author -->
+      <section id="author">
+        <h4 class="fw-bold text-primary">Author Capsule</h4>
+        <p class="text-secondary">Draft notes, flashcards, and quizzes.</p>
+        <!-- <button class="btn btn-secondary btn-sm back">Back</button>
+        <button class="btn btn-outline-success btn-sm">Save</button> -->
+        <hr />
+        <div id="author-editor"></div>
+      </section>
+
+      <!-- Learn -->
+      <section id="learn">
+        <h4 class="fw-bold text-primary">Learn</h4>
+        <p class="text-secondary">
+          Study a capsule in Notes, Flashcards, or Quiz mode.
+        </p>
+        <!-- <button class="btn btn-secondary btn-sm back">Back</button> -->
+        <hr />
+        <div id="learn-view"></div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>
